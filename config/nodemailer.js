@@ -1,12 +1,14 @@
-export const transporter = {
-  host: process.env.MAIL_HOST,
+import nodemailer from 'nodemailer'
+
+export const transporter = nodemailer.createTransport({
+  host: process.env.MAIL_HOST || 'smtp.gmail.com',
   port: process.env.MAIL_PORT || 465,
-  secure: false,
+  secure: true,
   auth: {
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PASS
   }
-}
+})
 
 export const mailDataConfig = {
   from: 'TechPro',

@@ -19,7 +19,7 @@ export default function Contact () {
       if (err) {
         console.log(err)
       } else {
-        return
+        console.log(info);
       }
     })
   }
