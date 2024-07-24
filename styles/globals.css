@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: whitesmoke;
+}
+
+header {
+  animation-name: blur;
+  animation-direction: alternate;
+  animation-timeline: scroll();
+}
+
+@keyframes blur {
+  from {
+    backdrop-filter: blur(0px);
+  }
+  to {
+    backdrop-filter: blur(10px);
+    background-color: rgb(24 24 27 / 0.5);
+  }
+}
