@@ -1,28 +1,9 @@
 import Input from '@ui/contact'
 import SectionTitle from '@ui/sectionTitle'
-import { transporter, mailDataConfig } from '@/config/nodemailer'
+import { Send } from '@/actions/SendEmail';
+import Button from '@ui/contact/button';
 
 export default function Contact () {
-  const Send = async formData => {
-    'use server'
-    const data = {}
-    for (const [k, v] of formData.entries()) {
-      data[k] = v
-    }
-    const mailData = {
-      ...mailDataConfig,
-      to: data.email,
-      text: data.message + ' | Sent from: ' + data.email,
-      html: `<div>${data.message}</div><p>Enviado por: ${process.env.EMAIL} </p>`
-    }
-    transporter.sendMail(mailData, function (err, info) {
-      if (err) {
-        console.log(err)
-      } else {
-        console.log(info);
-      }
-    })
-  }
 
   return (
     <section className='text-center min-h-[65dvh] my-20'>
@@ -35,7 +16,6 @@ export default function Contact () {
       </p>
 
       <form
-        encType='multipart/form-data'
         action={Send}
         method='post'
         className='flex flex-col px-5 w-full items-center'
@@ -43,7 +23,7 @@ export default function Contact () {
         <Input type='text' required name='name' placeholder='Tu Nombre' />
         <Input
           type='email'
-          autocomplete='on'
+          autoComplete='email'
           required
           name='email'
           placeholder='Tu Email'
@@ -53,12 +33,7 @@ export default function Contact () {
           placeholder='Tu Mensaje'
           className='w-full md:w-1/3 border h-28 resize-none border-zinc-700 bg-transparent rounded p-2 mb-4'
         />
-        <button
-          type='submit'
-          className='w-full md:w-1/3 bg-zinc-300 text-black border-zinc-800 border font-medium py-2 px-4 rounded-lg'
-        >
-          Send Message
-        </button>
+        <Button />
         <summary className='text-sm text-slate-300 mt-2 mb-5 max-w-2xl mx-auto'>
           La información que enviés se enviara a el email que agregues.
         </summary>
