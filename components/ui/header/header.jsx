@@ -25,7 +25,7 @@ export default function Header() {
         ☰
         <input type="checkbox" className="relative z-50 hidden" id="menu-btn" />
       </label>
-      <nav className="fixed place-content-center -right-full duration-300 peer-has-[:checked]:right-0 z-10 top-0 bottom-0 w-1/2 h-screen bg-gradient-to-l from-black to-black/0 lg:static lg:[background-image:none] lg:h-auto lg:place-content-start lg:w-auto">
+      <nav className="fixed place-content-center -right-full duration-300 peer-has-[:checked]:right-0 z-10 top-0 bottom-0 w-1/2 h-screen bg-gradient-to-l from-black to-black/50 lg:static lg:[background-image:none] lg:h-auto lg:place-content-start lg:w-auto">
         <ul className="flex flex-col lg:flex-row gap-3 relative">
           <div
             id="box"
