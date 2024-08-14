@@ -1,0 +1,12 @@
+{
+  "sectionTitle": "Contactanos",
+  "description": "Nuestra misión es ser la mejor solución para los consumidores, porque nos encargamos de brindar soluciones innovadoras para ayudar a las empresas a prosperar en el mundo digital.",
+  "form": {
+    "name": "Tu Nombre",
+    "email": "Tu Email",
+    "message": "Tu Mensaje",
+    "button": "Enviar",
+    "sending": "Enviando...",
+    "summary": "La información que enviés se enviara a el email que agregues."
+  }
+}

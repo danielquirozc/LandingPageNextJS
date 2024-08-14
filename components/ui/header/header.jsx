@@ -1,7 +1,8 @@
-import Link from "next/link";
+import {Link} from "@/navigation.js";
 import Logo from "../logo";
 import { menuLinks } from "./headerData";
 import LinkClient from "./linkClient";
+import LocaleSwitcher from "./localeSwitcher";
 
 export default function Header() {
   const navLinks = menuLinks.map((link) => (
@@ -32,6 +33,7 @@ export default function Header() {
             className="bg-red-500 rounded duration-150 absolute -z-10"
           ></div>
           {navLinks}
+          <LocaleSwitcher />
         </ul>
       </nav>
     </header>

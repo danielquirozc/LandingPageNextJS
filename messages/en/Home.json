@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Empower your business into the <span>digital future</span>",
+    "description": "TechPro is a technology consulting company that offers innovative solutions to help businesses thrive in the digital world.",
+    "button": "Contact Us"
+  },
+  "sectionTitle": "What our clients say",
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Juan Perez",
+      "position": "CTO, Company X",
+      "testimony": "TechPro completely transformed our IT infrastructure. Their team is highly professional and always available to resolve any issue that arises! Highly recommended!"
+    },
+    {
+      "id": "2",
+      "name": "Maria Lopez",
+      "position": "CEO, Company Y",
+      "testimony": "The seamless integration of systems they did for us was flawless Now, all our processes are automated and we operate with much more efficiency TechPro truly understands our needs."
+    },
+    {
+      "id": "3",
+      "name": "Carlos Garcia",
+      "position": "Operations Manager, Organization Z",
+      "testimony": "Thank you, TechPro, for helping our company make a significant leap in digital transformation. Their personalized approach and innovative solutions have helped us reach new levels of productivity."
+    }
+  ]
+}

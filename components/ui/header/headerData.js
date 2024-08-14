@@ -1,5 +1,5 @@
 export const menuLinks = [
-  { id: 1, title: "Inicio", url: "/" },
-  { id: 2, title: "Sobre nosotros", url: "/about" },
-  { id: 3, title: "Contacto", url: "/contact" },
+  { id: 1, title: "Home", url: "/" },
+  { id: 2, title: "About us", url: "/about" },
+  { id: 3, title: "Contact", url: "/contact" },
 ]

@@ -1,0 +1,31 @@
+{
+  "sectionTitle": "Who we are?",
+  "servicesTitle": "Our Services",
+  "description": "<p><strong>TechPro</strong> is a technology consulting company that offers innovative solutions to help businesses thrive in the digital world.</p> <p>Our mission is to be the best solution for consumers, offer the best service and the best experience using technologies.</p>",
+  "services": [
+    {
+      "id": "1",
+      "title": "IT Consultancy"
+    },
+    {
+      "id": "2",
+      "title": "Software Development"
+    },
+    {
+      "id": "3",
+      "title": "System Integration"
+    },
+    {
+      "id": "4",
+      "title": "Digital Transformation"
+    },
+    {
+      "id": "5",
+      "title": "Cibersecurity"
+    },
+    {
+      "id": "6",
+      "title": "Web Development"
+    }
+  ]
+}

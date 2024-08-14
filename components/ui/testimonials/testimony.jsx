@@ -1,6 +1,6 @@
 export default function Testimony({ testimony, name, position }) {
   return (
-    <article className="flex w-full border hover:border-red-400/35 hover:scale-105 duration-200 border-zinc-800 md:max-w-sm py-2 bg-zinc-950/75 rounded-xl flex-col px-5 justify-center">
+    <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="35px"
@@ -21,6 +21,6 @@ export default function Testimony({ testimony, name, position }) {
       <h3 className="text-sm mt-5 text-start text-slate-400">
         - {name}, {position}
       </h3>
-    </article>
+    </>
   );
 }
